@@ -1,0 +1,48 @@
+version: '3.8'
+
+# Services
+services:
+
+  # Nginx Service
+  nginx:
+    image: nginx:1.21-alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./src/task:/var/www/task
+      - ./.docker/nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - task
+
+  # task Service
+  task:
+    build:
+      context: ./src/task
+    working_dir: /var/www/task
+    volumes:
+      - ./src/task:/var/www/task
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # MySQL Service
+  mysql:
+    image: mysql/mysql-server:8.0
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: task
+    volumes:
+      - ./.docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - mysqldata:/var/lib/mysql
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1 -u root --password=$$MYSQL_ROOT_PASSWORD
+      interval: 5s
+      retries: 10
+
+# Volumes
+volumes:
+
+  mysqldata:
