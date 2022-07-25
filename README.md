@@ -3,7 +3,8 @@
 Hi there
 This is my test task based on Laravel v9.21.6 (PHP v8.1.8) . 
 
-You can read a more detailed work report [here](https://github.com/oleksandroo/testTask/blob/master/Test%20task%20report.pdf). I managed to complete all the tasks (main and optional)
+## My task report
+I don't know how well it will run and there won't be a problem. So I decided to make a progress report describing each step I took and why I did it. Hopefully it will make my thoughts clear and have a positive impact on the outcome of the selection. You can read a more detailed work report [here](https://github.com/oleksandroo/testTask/blob/master/Test%20task%20report.pdf). I managed to complete all the tasks (main and optional)
 ## Content
 
 This branch contains a three-tier architectureapplication running on a LEMP stack, supported by Docker and orchestrated by Docker Compose.
