@@ -1,12 +1,12 @@
 # Test task for Back-End PHP Intern in MacPaw
 
 Hi there
-This is my test job based on Laravel v9.21.6 (PHP v8.1.8) . 
+This is my test task based on Laravel v9.21.6 (PHP v8.1.8) . 
 
-You can read a more detailed work report [here](). I managed to complete all the tasks (main and optional)
+You can read a more detailed work report [here](https://github.com/oleksandroo/testTask/blob/master/Test%20task%20report.pdf). I managed to complete all the tasks (main and optional)
 ## Content
 
-This branch contains a [three-tier architecture](https://www.techopedia.com/definition/24649/three-tier-architecture) application running on a LEMP stack, supported by Docker and orchestrated by Docker Compose.
+This branch contains a three-tier architectureapplication running on a LEMP stack, supported by Docker and orchestrated by Docker Compose.
 
 It includes:
 
