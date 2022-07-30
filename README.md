@@ -24,13 +24,6 @@ Add the following domains to your machine's `hosts` file:
 127.0.0.1 http://laravel.test.task/
 ```
 
-Clone the repository 
-
-```
-$ git clone git@github.com:osteel/docker-tutorial.git && cd docker-tutorial
-$ git checkout part-3
-```
-
 **The rest of the commands are to be run from the root of the project.**
 
 Copy `.env.example` to `.env`, both at the root of the project and in `src/task`:
