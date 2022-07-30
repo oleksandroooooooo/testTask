@@ -24,7 +24,7 @@ Add the following domains to your machine's `hosts` file:
 127.0.0.1 http://laravel.test.task/
 ```
 
-Clone the repository and `checkout` the `part-3` branch:
+Clone the repository:
 
 ```
 $ git clone https://github.com/oleksandroo/testTask.git && cd testTask
